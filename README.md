@@ -1,5 +1,6 @@
 # FreeCAD Fasteners Workbench
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/shaise/FreeCAD_FastenersWB.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shaise/FreeCAD_FastenersWB/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/shaise/FreeCAD_FastenersWB.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shaise/FreeCAD_FastenersWB/context:python) [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
 A FreeCAD Workbench to Add/Attach various Fasteners to Parts  
 
@@ -123,6 +124,15 @@ screwobj = sm.createFastener('ISO7046', 'M6', '8', 'simple')
 **This is now done automatically**
 
 #### Release Notes 
+* V0.4.27  15 Dec 2022:  Fix error creating '3.5M3' PEM standoffs by @alexneufeld.
+                       - Automatically select Custom diameter when custom pitch is changed.
+* V0.4.26  13 Dec 2022:  Simplify creation of internal threads by @alexneufeld.
+                       - Remove LGTM badges by @alexneufeld.
+* V0.4.25  03 Dec 2022:  Fix Thread issues with extreme 3d print offsets
+* V0.4.24  21 Nov 2022:  Fix PEM standoff calculator
+                       - SVG Icons optimization by @EA32.  
+                       - Fix toolbar names by @FreeCAD-Tools.  
+                       - Add translation documentation by @FreeCAD-Tools.  
 * V0.4.23  05 Nov 2022:  Update portuguese translation by @riqueenz  
                        - GOST 1144 (Wood screws) code refactoring by @EA32  
                        - Add GrammaticalTools fixer script @FreeCAD-Tools.  
@@ -235,6 +245,10 @@ screwobj = sm.createFastener('ISO7046', 'M6', '8', 'simple')
 For further discussion, feel free to open a forum thread on [FreeCAD Open Discussion subforum](https://forum.freecadweb.org/viewforum.php?f=8) and make sure to ping user 'shaise'.  
 
 There is also an [ongoing thread](https://forum.freecadweb.org/viewtopic.php?f=8&t=11429) discussing Fasteners Workbench that is also a place to comment on.
+
+### Translation
+
+See [TRANSLATIONS.md](TRANSLATIONS.md)
 
 ### Contributing
 
